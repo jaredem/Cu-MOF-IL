@@ -1,0 +1,94 @@
+ &CONTROL
+                       title = 'celula da MOF' ,
+                 calculation = 'vc-relax' ,
+                restart_mode = 'from_scratch' ,
+                  wf_collect = .true. ,
+                       nstep = 500 ,
+                      outdir = '/.../' ,
+                      wfcdir = '/.../' ,
+                  pseudo_dir = '/.../' ,
+                      prefix = '...' ,
+                     tprnfor = .true.  
+                     tstress = .true.
+	           verbosity = 'high',
+  /
+ 
+  &SYSTEM
+                       ibrav = 0 ,
+                         nat = 22 ,
+                        ntyp = 5,
+                     ecutwfc = 55 ,
+                     ecutrho = 550 ,
+                       nosym = .false. ,
+                        nbnd = 960 ,
+                 occupations = 'smearing',
+                    smearing = 'gaussian' ,
+                     degauss = 0.01, 
+                       nspin = 2 ,
+      starting_magnetization(1) = 0.5 ,
+      starting_magnetization(2) = -0.5 ,
+                   lda_plus_u = .true.
+            U_projection_type = 'ortho-atomic' 
+                    Hubbard_U(1) = 7.0
+                    Hubbard_U(2) = 7.0
+                    Hubbard_J0(1) = 1.0 
+                    Hubbard_J0(2) = 1.0
+                    vdw_corr = 'grimme-d3',
+/ 
+ &ELECTRONS
+                 mixing_beta = 0.2 ,
+                    conv_thr = 1.0e-6 ,
+            electron_maxstep = 1600 ,
+             diagonalization = 'cg'
+
+ /
+ &IONS
+ /
+ &CELL
+ 
+/              
+
+CELL_PARAMETERS angstrom
+ 10.14230   0.00000   0.00000
+ -0.96537   6.26486   0.00000
+ -0.39846  -0.62319   3.40468
+
+
+
+ATOMIC_SPECIES
+ Cu1  63.546     Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+ Cu2  63.546     Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+ C   12.01100   C.pbe-n-kjpaw_psl.1.0.0.UPF
+ O   15.99900   O.pbe-n-kjpaw_psl.1.0.0.UPF
+ H    1.00784   H.pbe-kjpaw_psl.1.0.0.UPF
+
+
+
+ATOMIC_POSITIONS angstrom        
+Cu1  0.00000   0.00000   0.00000
+Cu2 -0.68192   2.82083   1.70234
+ O   1.78321   0.90668   0.28667
+ O   1.06121   2.98127   0.66153
+ O   9.23162   0.85841   1.35812
+ C   3.41637   2.73421   0.23152
+ C   3.54591   4.12106   0.43103
+ C   3.95572   1.07445   3.27189
+ C   1.99615   2.16956   0.42765
+ O   7.71726   2.66039   2.74315
+ O  -0.45315   4.78326   2.04655
+ C   5.36210   2.90746   3.17316
+ C   5.23256   1.52060   2.97364
+ C   4.82275   4.56721   0.13278
+ H   0.46949   4.80117   1.95074
+ C   6.78232   3.47211   2.97705
+ O   6.99525   4.73499   3.11800
+ H   3.03709   4.92715   0.51904
+ H   4.71860   5.42178   0.27700
+ H   8.30898   0.84050   1.45393
+ H   5.74137   0.71451   2.88563
+ H   4.05987   0.21989   3.12767
+
+
+
+K_POINTS automatic 
+ 2 2 4  0 0 0
