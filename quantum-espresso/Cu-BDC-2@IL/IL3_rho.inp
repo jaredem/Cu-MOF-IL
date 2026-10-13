@@ -1,0 +1,15 @@
+&INPUTPP
+    prefix = 'IL3'
+    outdir = '...'
+    filplot = 'IL3_charge'
+    plot_num = 0
+/
+
+&PLOT
+    nfile = 1
+    filepp(1) = 'IL3_charge'
+    weight(1) = 1.0
+    fileout = 'IL3_charge.xsf'
+    iflag = 3
+    output_format = 5
+/

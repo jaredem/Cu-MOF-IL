@@ -1,0 +1,23 @@
+&INPUTPP
+    prefix = 'surface_IL3'
+    outdir = '...'
+    filplot = 'charge_diff'
+    plot_num = 0
+/
+
+&PLOT
+    nfile = 3
+
+    filepp(1) = 'cubdc_il_charge'
+    filepp(2) = 'cubdc_charge'
+    filepp(3) = 'IL3_charge'
+
+    weight(1) =  1.0
+    weight(2) = -1.0
+    weight(3) = -1.0
+
+    fileout = 'charge_difference.xsf'
+
+    iflag = 3
+    output_format = 5
+/
