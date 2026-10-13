@@ -1,0 +1,5 @@
+&PROJWFC
+  prefix= 'surface_8',
+  outdir= '...' ,
+  filpdos= 'surface_8.dat'
+/

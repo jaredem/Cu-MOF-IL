@@ -1,0 +1,116 @@
+ &CONTROL
+                       title = 'celula da MOF' ,
+                 calculation = 'relax' ,
+                restart_mode = 'from_scratch' ,
+                  wf_collect = .true. ,
+                       nstep = 500 ,
+                      outdir = '...' ,
+                      wfcdir = '...,
+                  pseudo_dir = '...' ,
+                      prefix = 'surface_2' ,
+                     tprnfor = .true.  
+                     tstress = .true.
+	           verbosity = 'high',
+  /
+ 
+  &SYSTEM
+                       ibrav = 0 ,
+                         nat = 44,
+                        ntyp = 5,
+                     ecutwfc = 55 ,
+                     ecutrho = 550 ,
+                       nosym = .false. ,
+                        nbnd = 960 ,
+                 occupations = 'smearing',
+                    smearing = 'gaussian' ,
+                     degauss = 0.01 ,
+                       nspin = 2 ,
+   starting_magnetization(1) = 0.5 ,
+   starting_magnetization(2) = -0.5,
+                  lda_plus_u = .true.
+           U_projection_type = 'ortho-atomic' 
+                   Hubbard_U(1) = 7.0
+                   Hubbard_U(2) = 7.0  
+                   Hubbard_J0(1) = 1.0  
+                   Hubbard_J0(1) = 1.0   
+                    vdw_corr = 'DFT-D3' 
+/ 
+ &ELECTRONS
+                 mixing_beta = 0.2 ,
+                    conv_thr = 1.0e-6 ,
+            electron_maxstep = 1600 ,
+           
+ /
+ &IONS
+
+                ion_dynamics = 'bfgs',
+           pot_extrapolation = 'second-order',
+           wfc_extrapolation = 'second-order',
+ /
+ &CELL
+ 
+/              
+
+CELL_PARAMETERS angstrom
+ 11.19983    0.00000    0.00000
+ 9.12129    6.48571   0.00000
+-3.61120  -8.76720  16.46980
+
+ATOMIC_SPECIES
+ Cu1  63.546    Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+ Cu2  63.546    Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+ C    12.01100   C.pbe-n-kjpaw_psl.1.0.0.UPF
+ O    15.99900   O.pbe-n-kjpaw_psl.1.0.0.UPF
+ H     1.00784   H.pbe-kjpaw_psl.1.0.0.UPF
+
+
+ATOMIC_POSITIONS angstrom       
+Cu  -6.84696 -16.61927  31.22313
+Cu   3.31360 -13.37641  31.22313
+Cu  -7.51622 -18.24371  34.27502
+Cu   2.64435 -15.00086  34.27502
+ H   5.44176 -14.46010  30.87197
+ H   7.21696 -12.42227  30.50854
+ H   9.63226 -11.73634  30.50933
+ H   1.18543 -12.29274  31.57430
+ H  -0.58976 -14.33056  31.93773
+ H  -3.00507 -15.01649  31.93694
+ H   4.77250 -16.08454  33.92386
+ H   6.54771 -14.04671  33.56044
+ H   8.96300 -13.36079  33.56123
+ H   0.51617 -13.91718  34.62619
+ H  -1.25902 -15.95501  34.98962
+ H  -3.67433 -16.64093  34.98883
+ C   0.09933 -16.23683  31.21673
+ C   8.85222 -11.04273  30.81847
+ C   1.53958 -15.82607  31.19285
+ C   6.52785 -10.51599  31.22953
+ C   7.51609 -11.42227  30.82114
+ C   5.08760 -10.92675  31.25340
+ C  -0.56992 -17.86128  34.26862
+ C  -0.88890 -15.33057  31.62513
+ C   8.18297 -12.66717  33.87036
+ C   0.87033 -17.45051  34.24474
+ C   5.85860 -12.14043  34.28142
+ C   6.84683 -13.04671  33.87303
+ C  -2.22503 -15.71011  31.62780
+ C   4.41835 -12.55119  34.30529
+ C  -1.55815 -16.95501  34.67702
+ C  -2.89428 -17.33455  34.67969
+ O  11.50801 -10.18605  30.76586
+ O   4.53179 -14.75461  30.69206
+ O   4.82387 -12.10471  30.82600
+ O  10.83875 -11.81050  33.81775
+ O   1.80332 -14.64812  31.62026
+ O   3.86253 -16.37905  33.74395
+ O   4.15462 -13.72915  33.87789
+ O   2.09540 -11.99822  31.75422
+ O  -4.88081 -16.56677  31.68042
+ O   1.13406 -16.27257  34.67215
+ O   1.42614 -13.62266  34.80611
+ O  -5.55007 -18.19122  34.73231
+
+
+ 
+K_POINTS automatic 
+ 2 2 4  0 0 0
