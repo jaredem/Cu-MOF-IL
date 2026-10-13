@@ -5,7 +5,7 @@
 
 # Overview
 
-This repository contains experimental and computational data related to the structural, electronic, and gas adsorption properties of copper-based metal–organic frameworks (Cu-BDC) synthesized using different solvent systems.
+This repository contains computational data related to the structural, electronic, and gas adsorption properties of copper-based metal–organic frameworks (Cu-BDC) synthesized using ionic liquid as solvent.
 
 # Contents
 
