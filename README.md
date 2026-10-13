@@ -11,17 +11,11 @@ This repository contains experimental and computational data related to the stru
 
 01_structures/: Crystallographic structures and CIF files.
 
-02_experimental_data/: Experimental characterization data.
-
-quantum-espresso/: Data related to DFT calculations for optimization and electronic properties performed using the Quantum ESPRESSO software.
+quantum-espresso/: Data related to DFT calculations for optimization and DOS/PDOS analysis performed using the Quantum ESPRESSO software.
 
 GFN1/: Structural optimization data obtained using the DFTB software with the GFN1-xTB method.
 
 orca_IL: IL optimization data using ORCA software.
-
-04_scripts/: Scripts for data processing and analysis.
-
-05_processed_data/: Processed data used to generate figures and tables.
 
 # Computational methods
 
