@@ -17,6 +17,8 @@ quantum-espresso/: Data related to DFT calculations for optimization and electro
 
 GFN1/: Structural optimization data obtained using the DFTB software with the GFN1-xTB method.
 
+orca_IL: IL optimization data using ORCA software.
+
 04_scripts/: Scripts for data processing and analysis.
 
 05_processed_data/: Processed data used to generate figures and tables.
