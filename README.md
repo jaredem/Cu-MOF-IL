@@ -25,7 +25,9 @@ Periodic DFT calculations were performed using Quantum ESPRESSO and DFTB+. Detai
 
 # Data usage
 
-Please cite the associated research article when using these data. Refer to the documentation in each directory for information about individual files, computational settings, and data processing procedures.
+Please cite the associated research article when using these data. 
+
+Jarede S. Martins, Carolina B. P. Ligieiro, Rodrigo S. Bitzer, Yann Maia, Odivaldo C. Alves, Sara S. Vieira, Paulo Henrique M. Toledo, Gustavo F. S. Andrade, Thiago M. Rossi, Mariana M. V. M. Souza, Célia M. Ronconi, Luciano T. Costa; Ionic liquid induced structural transformation in a copper-based MOF synthesis: Experimental and DFT investigations. J. Chem. Phys. 14 June 2026; 164 (22): 224705. https://doi.org/10.1063/5.0335653
 
 # Contact
 
