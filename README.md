@@ -13,7 +13,9 @@ This repository contains experimental and computational data related to the stru
 
 02_experimental_data/: Experimental characterization data.
 
-03_dft/: Density functional theory (DFT) calculations and electronic structure data.
+quantum-espresso/: Data related to DFT calculations for optimization and electronic properties performed using the Quantum ESPRESSO software.
+
+GFN1/: Structural optimization data obtained using the DFTB software with the GFN1-xTB method.
 
 04_scripts/: Scripts for data processing and analysis.
 
