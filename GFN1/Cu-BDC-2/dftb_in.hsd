@@ -1,0 +1,46 @@
+Geometry = GenFormat {
+  <<< "in.gen"
+}
+
+Driver = VelocityVerlet {
+  TimeStep = 1.0
+  Steps = 3000
+
+  Thermostat = NoseHoover {
+    Temperature = 300.0
+    CouplingStrength = 1000.0
+    ChainLength = 5
+  }
+
+  Barostat = Berendsen {
+    Pressure = 0.000986923267
+    TimeScale = 10.0
+    PressureTensor = Isotropic
+    UseScaledCell = Yes
+    Anisotropic = Yes
+  }
+
+  OutputPrefix = "md_test"
+}
+
+Hamiltonian = xTB {
+  Method = "GFN1-xTB"
+  MaxAngularMomentum = {
+    C = "p"
+    H = "s"
+    O = "p"
+    Cu = "d"
+  }
+  KPointsAndWeights = SupercellFolding {
+    1 0 0
+    0 1 0
+    0 0 1
+    0.0 0.0 0.0
+  }
+}
+
+Options {
+  WriteVelocities = Yes
+  WriteForces = Yes
+}
+
