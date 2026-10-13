@@ -1,7 +1,7 @@
 # Cu-MOF-IL
 ## Copper-Based Metal–Organic Frameworks: Experimental and Computational Data
 
-![Graphical Abstract](images/TOC.png)
+![Graphical Abstract](TOC_MOF.jpeg)
 
 # Overview
 
