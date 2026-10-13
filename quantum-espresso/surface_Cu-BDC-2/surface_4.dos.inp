@@ -1,0 +1,8 @@
+&DOS
+                      prefix = 'surface_4',
+                      outdir = '...' ,
+                      fildos = 'surface_4.dat',
+                        emin = -10 ,
+                        emax = 18 ,
+ /
+
