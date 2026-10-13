@@ -15,7 +15,9 @@ quantum-espresso/: Data related to DFT calculations for optimization and DOS/PDO
 
 GFN1/: Structural optimization data obtained using the DFTB software with the GFN1-xTB method.
 
-orca_IL: IL optimization data using ORCA software.
+orca_IL/: IL optimization data using ORCA software.
+
+xtb/: Calculations performed using the xtb package for subsequent van der Waals interaction analysis employing the Independent Gradient Model based on Hirshfeld partitioning (IGMH).
 
 # Computational methods
 
