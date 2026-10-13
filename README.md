@@ -1,6 +1,8 @@
 # Cu-MOF-IL
 ## Copper-Based Metal–Organic Frameworks: Experimental and Computational Data
 
+![Graphical Abstract](images/TOC.png)
+
 # Overview
 
 This repository contains experimental and computational data related to the structural, electronic, and gas adsorption properties of copper-based metal–organic frameworks (Cu-BDC) synthesized using different solvent systems.
