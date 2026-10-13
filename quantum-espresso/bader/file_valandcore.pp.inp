@@ -1,0 +1,12 @@
+&inputpp
+    prefix = 'file_prefix' ,
+    outdir='...' ,
+    filplot ='/.../file_valandcore.dat',
+    plot_num= 21
+/
+&plot
+    filepp(1) ='/../file_valandcore.dat' ,
+    iflag = 3 ,
+    output_format = 6 ,
+    fileout ='/.../file_valandcore.cube',
+/
