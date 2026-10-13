@@ -1,0 +1,8 @@
+&PROJWFC
+  prefix= 'Cu-BDC',
+  outdir= '...' ,
+  filpdos= 'Cu-BDC_pdos.dat'
+/
+~                                                                                      
+~                                                                                      
+~        

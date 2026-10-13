@@ -1,0 +1,9 @@
+&DOS
+                      prefix = 'CuDMF1',
+                      outdir = '...' ,
+                      fildos = 'Cu-MOF-1-DMF.dat',
+                        Emin = -10 ,
+                        Emax = 18 ,
+ /
+
+

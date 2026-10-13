@@ -1,0 +1,6 @@
+&PROJWFC
+  prefix= 'Cu-MOF-1',
+  outdir= '...' ,
+  filpdos= 'Cu-MOF-1.dat'
+/
+

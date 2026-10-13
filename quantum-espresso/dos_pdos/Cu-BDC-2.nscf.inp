@@ -1,0 +1,91 @@
+ &CONTROL
+                       title = 'celula da MOF' ,
+                 calculation = 'nscf' ,
+                restart_mode = 'from_scratch' ,
+                  wf_collect = .true. ,
+                       nstep = 500 ,
+                      outdir = '...' ,
+                      wfcdir = '...' ,
+                  pseudo_dir = '...' ,
+                      prefix = 'MWA' ,
+                     tprnfor = .true.  
+                     tstress = .true.
+	           verbosity = 'high',
+  /
+ 
+  &SYSTEM
+                       ibrav = 0 ,
+                         nat = 22 ,
+                        ntyp = 5,
+                     ecutwfc = 55 ,
+                     ecutrho = 550 ,
+                       nosym = .true. ,
+                        nbnd = 960 ,
+                 occupations = 'tetrahedra',
+                    smearing = 'gaussian' ,
+                     degauss = 0.01, 
+                       nspin = 2 ,
+      starting_magnetization(1) = 0.5 ,
+      starting_magnetization(2) = -0.5 ,
+                   lda_plus_u = .true.
+            U_projection_type = 'ortho-atomic' 
+                    Hubbard_U(1) = 7.0
+                    Hubbard_U(2) = 7.0
+                    Hubbard_J0(1) = 1.0 
+                    Hubbard_J0(2) = 1.0
+                    vdw_corr = 'DFT-D3',
+/ 
+ &ELECTRONS
+                 mixing_beta = 0.2 ,
+                    conv_thr = 1.0e-6 ,
+            electron_maxstep = 1600 ,
+             diagonalization = 'cg'
+
+ /
+ &IONS
+ /
+ &CELL
+ 
+/              
+
+CELL_PARAMETERS (angstrom)
+  10.216760098   0.016551947  -0.019032119
+  -0.961635678   6.290439502   0.044485658
+  -0.407545246  -0.604303368   3.445212270
+
+ATOMIC_SPECIES
+ Cu1  63.546     Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+ Cu2  63.546     Cu.pbe-dn-kjpaw_psl.1.0.0.UPF
+ C   12.01100   C.pbe-n-kjpaw_psl.1.0.0.UPF
+ O   15.99900   O.pbe-n-kjpaw_psl.1.0.0.UPF
+ H    1.00784   H.pbe-kjpaw_psl.1.0.0.UPF
+
+
+ATOMIC_POSITIONS (angstrom)
+Cu1           0.0000000000        0.0000000000        0.0000000000
+Cu2          -0.6845955071        2.8430630370        1.7448489391
+O             1.7873753506        0.8671107396        0.3619111590
+O             1.0491654739        2.9848971955        0.7300301107
+O             9.3412951808        0.9776625278        1.4303921935
+C             3.3348709885        2.6587229044        0.2205572452
+C             3.5972486833        4.0279907302        0.3653434046
+C             3.9663656375        1.1853293571        3.3084704677
+C             1.9563930035        2.1230334110        0.4581469498
+O             7.7984136836        2.7177808418        2.7406356296
+O            -0.4937159911        4.7250254876        2.0402634857
+C             5.5127081862        3.0439651763        3.2501085632
+C             5.2503304891        1.6746872418        3.1053122065
+C             4.8812135350        4.5173486150        0.1621851434
+H             0.4525781740        4.9523225181        2.0358137435
+C             6.8911861414        3.5796548003        3.0125391173
+O             7.0601937657        4.8355772595        3.1087445389
+H             2.7800191895        4.6949293521        0.6383598360
+H             5.1026382106        5.5771472163        0.2759440183
+H             8.3950010157        0.7503654972        1.4348419357
+H             6.0675499095        1.0077486036        2.8322957937
+H             3.7449409791        0.1255407991        3.1947116609
+
+
+
+K_POINTS automatic 
+ 4 4 8  0 0 0

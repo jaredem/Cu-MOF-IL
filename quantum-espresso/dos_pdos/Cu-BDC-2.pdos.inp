@@ -1,0 +1,5 @@
+&PROJWFC
+  prefix= 'MWA',
+  outdir= '...' ,
+  filpdos= 'MWA_pdos.dat'
+/

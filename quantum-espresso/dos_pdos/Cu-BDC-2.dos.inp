@@ -1,0 +1,8 @@
+&DOS
+                      prefix = 'MWA',
+                      outdir = '/home/lovelace/proj/proj753/jarede/MOF' ,
+                      fildos = 'MWA.dat',
+                        emin = -10 ,
+                        emax = 18 ,
+ /
+

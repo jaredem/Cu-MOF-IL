@@ -1,0 +1,8 @@
+&DOS
+                      prefix = 'Cu-BDC',
+                      outdir = '...' ,
+                      fildos = 'Cu-BDC.dat',
+                        emin = -10 ,
+                        emax = 18 ,
+/
+

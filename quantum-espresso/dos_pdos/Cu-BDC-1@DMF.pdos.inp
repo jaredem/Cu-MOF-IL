@@ -1,0 +1,5 @@
+&PROJWFC
+  prefix= 'CuDMF1',
+  outdir= '...' ,
+  filpdos= 'Cu-DMF_pdos.dat'
+/

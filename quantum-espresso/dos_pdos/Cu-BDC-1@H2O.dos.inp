@@ -1,0 +1,8 @@
+&DOS
+                      prefix = 'Cu-MOF-1',
+                      outdir = '...' ,
+                      fildos = 'Cu-MOF-1.dat',
+                        Emin = -20 ,
+                        Emax = 20 ,
+ /
+
