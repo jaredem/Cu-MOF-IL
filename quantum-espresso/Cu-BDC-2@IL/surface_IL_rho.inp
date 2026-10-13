@@ -1,0 +1,17 @@
+&INPUTPP
+    prefix = 'surface_IL3'
+    outdir = '...'
+    filplot = 'cubdc_il_charge'
+    plot_num = 0
+/
+
+&PLOT
+    nfile = 1
+    filepp(1) = 'cubdc_il_charge'
+    weight(1) = 1.0
+
+    fileout = 'cubdc_il_charge.xsf'
+
+    iflag = 3
+    output_format = 5
+/
