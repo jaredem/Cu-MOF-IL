@@ -7,8 +7,6 @@
 
 This repository contains computational data related to the structural, electronic, and gas adsorption properties of copper-based metal–organic frameworks (Cu-BDC) synthesized using ionic liquid as solvent.
 
-                                           ![Material bulk para Cu-BDC-2](video.mp4)
-
 # Contents
 
 01_structures/: Crystallographic structures and CIF files.
